@@ -25,6 +25,7 @@
       "elastic-kibana/1.0.0": {
         "dependencies": {
           "Serilog": "2.9.0",
+          "Serilog.Exceptions": "5.4.0",
           "Serilog.Extensions.Logging": "3.0.1",
           "Serilog.Sinks.Elasticsearch": "8.0.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
@@ -240,7 +241,7 @@
           "System.Reflection.Extensions": "4.1.2.0",
           "System.Reflection.Metadata": "1.4.5.0",
           "System.Reflection.Primitives.Reference": "4.1.2.0",
-          "System.Reflection.TypeExtensions": "4.1.2.0",
+          "System.Reflection.TypeExtensions.Reference": "4.1.2.0",
           "System.Resources.Reader": "4.1.2.0",
           "System.Resources.ResourceManager.Reference": "4.1.2.0",
           "System.Resources.Writer": "4.1.2.0",
@@ -365,6 +366,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Serilog.dll": {}
+        }
+      },
+      "Serilog.Exceptions/5.4.0": {
+        "dependencies": {
+          "Serilog": "2.9.0",
+          "System.Reflection.TypeExtensions": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Exceptions.dll": {
+            "assemblyVersion": "5.4.0.0",
+            "fileVersion": "5.4.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Exceptions.dll": {}
         }
       },
       "Serilog.Extensions.Logging/3.0.1": {
@@ -578,6 +594,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Reflection.TypeExtensions/4.7.0": {},
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1931,7 +1948,7 @@
         },
         "compileOnly": true
       },
-      "System.Reflection.TypeExtensions/4.1.2.0": {
+      "System.Reflection.TypeExtensions.Reference/4.1.2.0": {
         "compile": {
           "System.Reflection.TypeExtensions.dll": {}
         },
@@ -2423,6 +2440,13 @@
       "path": "serilog/2.9.0",
       "hashPath": "serilog.2.9.0.nupkg.sha512"
     },
+    "Serilog.Exceptions/5.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lvj5k8XkjKhn4A9llOwPwVL5n42OpWGtsoLY4dOwTJg98NxFxQn1jSWOnTeHJtW1JUzXXRvG3JHSwoETZll5KA==",
+      "path": "serilog.exceptions/5.4.0",
+      "hashPath": "serilog.exceptions.5.4.0.nupkg.sha512"
+    },
     "Serilog.Extensions.Logging/3.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2569,6 +2593,13 @@
       "sha512": "sha512-5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VybpaOQQhqE6siHppMktjfGBw1GCwvCqiufqmP8F1nj7fTUNtW35LOEt3UZTEsECfo+ELAl/9o9nJx3U91i7vA==",
+      "path": "system.reflection.typeextensions/4.7.0",
+      "hashPath": "system.reflection.typeextensions.4.7.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.0.1": {
       "type": "package",
@@ -3712,7 +3743,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Reflection.TypeExtensions/4.1.2.0": {
+    "System.Reflection.TypeExtensions.Reference/4.1.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

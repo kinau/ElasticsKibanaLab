@@ -41,3 +41,4 @@ C:\Users\aukin\elastic-kibana\src\obj\Debug\netcoreapp3.1\elastic-kibana.Views.p
 C:\Users\aukin\elastic-kibana\src\obj\Debug\netcoreapp3.1\elastic-kibana.csproj.CopyComplete
 C:\Users\aukin\elastic-kibana\src\obj\Debug\netcoreapp3.1\elastic-kibana.dll
 C:\Users\aukin\elastic-kibana\src\obj\Debug\netcoreapp3.1\elastic-kibana.pdb
+C:\Users\aukin\elastic-kibana\src\bin\Debug\netcoreapp3.1\Serilog.Exceptions.dll

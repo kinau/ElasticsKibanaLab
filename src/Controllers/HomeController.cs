@@ -20,11 +20,20 @@ namespace elastic_kibana.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation($"oh hai there! : {DateTime.UtcNow}");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            try
+            {
+                throw new Exception("oops. i haz cause error in UR codez.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "ur code iz buggy.");
+            }
             return View();
         }
 
